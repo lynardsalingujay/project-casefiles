@@ -37,6 +37,7 @@ export type Project = {
   stack: string[];
   href?: string;
   demoHref?: string;
+  links?: { label: string; href: string }[];
 };
 
 export const projects: Project[] = [
@@ -70,6 +71,17 @@ export const projects: Project[] = [
     description:
       "A voice assistant built over an Obsidian daily journal using a RAG pipeline — covering embeddings, retrieval, and voice interfaces.",
     stack: ["RAG", "AI/LLM", "Voice"],
+  },
+  {
+    title: "Project Task Flow",
+    status: "Learning",
+    description:
+      "A task manager app split into a Java Spring backend and an Angular frontend — my current learning project for modern Java Spring and Angular, built as a clean-slate exercise rather than a rework of prior projects.",
+    stack: ["Java", "Spring", "Angular", "TypeScript"],
+    links: [
+      { label: "API repo", href: "https://github.com/lynardsalingujay/taskflow-api" },
+      { label: "Angular repo", href: "https://github.com/lynardsalingujay/taskflow-angular" },
+    ],
   },
 ];
 

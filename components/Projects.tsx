@@ -36,7 +36,7 @@ function CaseFile({ project, index }: { project: Project; index: number }) {
             </li>
           ))}
         </ul>
-        {(project.href || project.demoHref) && (
+        {(project.href || project.demoHref || project.links?.length) && (
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1">
             {project.href && (
               <a
@@ -58,6 +58,17 @@ function CaseFile({ project, index }: { project: Project; index: number }) {
                 Live evidence
               </a>
             )}
+            {project.links?.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-xs text-dossier-phosphor hover:underline"
+              >
+                {link.label}
+              </a>
+            ))}
           </div>
         )}
       </div>
