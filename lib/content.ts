@@ -24,8 +24,8 @@ part of that process.`
 	;
 
 export const skills = {
-  stable: ["Python", "Java", "SQL", "PostgreSQL"],
-  beta: ["TypeScript", "Angular"],
+  stable: ["Python", "Java", "SQL", "PostgreSQL", "TypeScript", "React", "Next.js"],
+  beta: ["Angular", "Swift", "iOS"],
   experimental: ["Rust", "Go", "AI / LLM tooling", "RAG pipelines"],
   tools: ["Git", "Vim / Neovim", "Claude Code", "iTerm2"],
 };
