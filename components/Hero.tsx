@@ -39,10 +39,10 @@ export default function Hero() {
           </div>
           <div>
             <p className="font-mono text-[10px] uppercase tracking-wider text-dossier-muted">
-              Clearance
+              Adaptability
             </p>
             <p className="mt-1 font-mono text-sm text-dossier-ink">
-              Level 4 — Enterprise Systems
+              Cross-Stack Engineer
             </p>
           </div>
         </div>

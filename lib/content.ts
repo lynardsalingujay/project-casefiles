@@ -3,8 +3,8 @@
 export const profile = {
   name: "Lynard Salingujay",
   title: "Software Engineer",
-  tagline: "Software engineer with 14+ years delivering enterprise systems across banking, financial services, and utilities — in Java, Python, and SQL.",
-  location: "Christchurch / Canterbury, New Zealand",
+  tagline: "Cross-stack engineer with a decade-plus in enterprise systems — now building in AI, automation, and modern web.",
+  location: "Christchurch, New Zealand",
   email: "lynardsalingujay@icloud.com",
   github: "https://github.com/lynardsalingujay",
   linkedin: "https://linkedin.com/in/lynardsalingujay",
@@ -44,9 +44,9 @@ export const projects: Project[] = [
     title: "This Portfolio",
     status: "Shipped",
     description:
-      "This site — built to showcase my work and track what I'm currently learning. A terminal/code-editor themed UI, statically typed end to end, deployed on Vercel.",
+      "This site — repo name project-casefiles — built to showcase my work and track what I'm currently learning. A dossier/case-file themed UI, statically typed end to end, deployed on Vercel.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
-    href: "https://github.com/your-username/portfolio",
+    href: "https://github.com/lynardsalingujay/project-casefiles",
     demoHref: "https://lynardsalingujay.com",
   },
   {
@@ -57,18 +57,19 @@ export const projects: Project[] = [
     stack: ["n8n", "AI/LLM", "Automation"],
   },
   {
+    title: "Shellingford",
+    status: "In progress",
+    description:
+      "A native iPhone app for recording a daily journal spoken in Bisaya/Cebuano. Consolidates recordings by day and uploads them to an n8n workflow (hosted on Fly.io) that transcribes and translates to English.",
+    stack: ["Swift", "iOS", "n8n", "AI/LLM"],
+    href: "https://github.com/lynardsalingujay/shellingford-pipeline",
+  },
+  {
     title: "Voice Journal Assistant",
     status: "In progress",
     description:
       "A voice assistant built over an Obsidian daily journal using a RAG pipeline — covering embeddings, retrieval, and voice interfaces.",
     stack: ["RAG", "AI/LLM", "Voice"],
-  },
-  {
-    title: "Community Events Site",
-    status: "Shipped",
-    description:
-      "A private community events website for organising and sharing local events.",
-    stack: ["Next.js", "Supabase"],
   },
 ];
 
