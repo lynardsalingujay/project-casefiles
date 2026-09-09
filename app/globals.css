@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ede6d6;
+    color: #2b2620;
+    background-image: radial-gradient(
+      rgba(43, 38, 32, 0.035) 1px,
+      transparent 1px
+    );
+    background-size: 3px 3px;
+  }
+
+  ::selection {
+    background-color: #a93226;
+    color: #f7f2e7;
+  }
+
+  :focus-visible {
+    outline: 2px solid #a93226;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Dotted tear-line between exhibits, standing in for the perforated
+     edge of a form pulled from a case file — a real document convention,
+     not a decorative rule. */
+  .perforation {
+    border-bottom: 2px dotted #c9bfa0;
+  }
+
+  /* Ink stamp: used only for the three honest status tiers and the
+     hero's clearance badge — kept to those, not spread everywhere. */
+  .stamp {
+    display: inline-block;
+    border: 2px solid currentColor;
+    padding: 0.15rem 0.6rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    transform: rotate(-3deg);
+    border-radius: 2px;
+  }
+
+  .stamp-drop {
+    animation: stamp-drop 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+    animation-delay: 0.3s;
+  }
+
+  @keyframes stamp-drop {
+    from {
+      opacity: 0;
+      transform: rotate(-3deg) scale(1.6);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(-3deg) scale(1);
+    }
+  }
+
+  .exhibit-label {
+    @apply font-mono text-xs text-dossier-muted;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
