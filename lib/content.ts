@@ -4,7 +4,7 @@ export const profile = {
   name: "Lynard Salingujay",
   title: "Software Engineer",
   tagline:
-    "Cross-stack engineer with a decade-plus in enterprise systems — now building in AI, automation, and modern web.",
+    "Language-agnostic engineer with a decade-plus in enterprise systems — I learn whatever stack the problem needs, from Java to TypeScript to AI and automation.",
   location: "Christchurch, New Zealand",
   email: "lynardsalingujay@icloud.com",
   github: "https://github.com/lynardsalingujay",
