@@ -3,15 +3,15 @@
 export const profile = {
   name: "Lynard Salingujay",
   title: "Software Engineer",
-  tagline: "Cross-stack engineer with a decade-plus in enterprise systems — now building in AI, automation, and modern web.",
+  tagline:
+    "Cross-stack engineer with a decade-plus in enterprise systems — now building in AI, automation, and modern web.",
   location: "Christchurch, New Zealand",
   email: "lynardsalingujay@icloud.com",
   github: "https://github.com/lynardsalingujay",
   linkedin: "https://linkedin.com/in/lynardsalingujay",
 };
 
-export const about = 
-`I'm a software engineer with over 14 years of experience across banking,
+export const about = `I'm a software engineer with over 14 years of experience across banking,
 financial services, and utilities — including roles at IBM, Standard
 Chartered Bank, OCBC Bank, Rakuten Trade, and Gentrack. At Gentrack I
 implemented platform requirements for major New Zealand utility clients
@@ -20,11 +20,18 @@ including Genesis and Mercury.
 I moved to New Zealand in 2019 and completed a Master of Information
 Technology at the Eastern Institute of Technology. These days I'm
 rebuilding my stack for modern web development — this site itself is
-part of that process.`
-	;
+part of that process.`;
 
 export const skills = {
-  stable: ["Python", "Java", "SQL", "PostgreSQL", "TypeScript", "React", "Next.js"],
+  stable: [
+    "Python",
+    "Java",
+    "SQL",
+    "PostgreSQL",
+    "TypeScript",
+    "React",
+    "Next.js",
+  ],
   beta: ["Angular", "Swift", "iOS"],
   experimental: ["Rust", "Go", "AI / LLM tooling", "RAG pipelines"],
   tools: ["Git", "Vim / Neovim", "Claude Code", "iTerm2"],
@@ -61,8 +68,8 @@ export const projects: Project[] = [
     title: "Shellingford",
     status: "In progress",
     description:
-      "A native iPhone app for recording a daily journal spoken in Bisaya/Cebuano. Consolidates recordings by day and uploads them to an n8n workflow (hosted on Fly.io) that transcribes and translates to English.",
-    stack: ["Swift", "iOS", "n8n", "AI/LLM"],
+      "A native iPhone app for recording a daily voice journal in English. Recordings are consolidated by day and sent to an n8n workflow (hosted on Fly.io) that transcribes them, cleans up the grammar, tags each entry, and files a Markdown note into an Obsidian vault via a home server.",
+    stack: ["Swift", "iOS", "n8n", "AI/LLM", "Python"],
     href: "https://github.com/lynardsalingujay/shellingford-pipeline",
   },
   {
@@ -79,8 +86,14 @@ export const projects: Project[] = [
       "A task manager app split into a Java Spring backend and an Angular frontend — my current learning project for modern Java Spring and Angular, built as a clean-slate exercise rather than a rework of prior projects.",
     stack: ["Java", "Spring", "Angular", "TypeScript"],
     links: [
-      { label: "API repo", href: "https://github.com/lynardsalingujay/taskflow-api" },
-      { label: "Angular repo", href: "https://github.com/lynardsalingujay/taskflow-angular" },
+      {
+        label: "API repo",
+        href: "https://github.com/lynardsalingujay/taskflow-api",
+      },
+      {
+        label: "Angular repo",
+        href: "https://github.com/lynardsalingujay/taskflow-angular",
+      },
     ],
   },
 ];
