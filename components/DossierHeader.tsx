@@ -25,9 +25,13 @@ export default function DossierHeader() {
       }}
     >
       <div className="flex items-center justify-between px-4 py-3 md:px-6">
-        <span className="whitespace-nowrap font-mono text-xs tracking-wide text-dossier-muted">
+        <a
+          href="#top"
+          className="whitespace-nowrap font-mono text-xs tracking-wide text-dossier-muted hover:text-dossier-ink"
+          aria-label="Scroll to top"
+        >
           FILE NO. LS-2026
-        </span>
+        </a>
         <div className="flex items-center gap-4">
           <span className="stamp whitespace-nowrap text-dossier-stamp">
             OPEN TO WORK

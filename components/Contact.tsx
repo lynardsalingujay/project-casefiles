@@ -24,6 +24,17 @@ export default function Contact() {
               {profile.email}
             </a>
           </div>
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-wider text-dossier-muted">
+              Mobile
+            </p>
+            <a
+              href="tel:+64273003519"
+              className="font-mono text-sm text-dossier-stamp hover:underline"
+            >
+              027 300 3519
+            </a>
+          </div>
           <div className="flex gap-8">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-wider text-dossier-muted">
