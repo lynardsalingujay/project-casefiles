@@ -23,18 +23,28 @@ rebuilding my stack for modern web development — this site itself is
 part of that process.`;
 
 export const skills = {
-  stable: [
-    "Python",
-    "Java",
-    "SQL",
-    "PostgreSQL",
+  stable: ["Python", "Java", "SQL", "PostgreSQL"],
+  beta: [
     "TypeScript",
     "React",
     "Next.js",
+    "Spring Boot",
+    "Angular",
+    "Swift",
+    "iOS",
   ],
-  beta: ["Angular", "Swift", "iOS"],
   experimental: ["Rust", "Go", "AI / LLM tooling", "RAG pipelines"],
-  tools: ["Git", "Vim / Neovim", "Claude Code", "iTerm2"],
+  tools: [
+    "Git",
+    "Docker",
+    "AWS (EC2, S3)",
+    "Postman",
+    "n8n",
+    "Vercel",
+    "VS Code",
+    "Vim / Neovim",
+    "Claude Code",
+  ],
 };
 
 export type Project = {
@@ -66,18 +76,26 @@ export const projects: Project[] = [
   },
   {
     title: "Shellingford",
-    status: "In progress",
+    status: "Shipped",
     description:
       "A native iPhone app for recording a daily voice journal in English. Recordings are consolidated by day and sent to an n8n workflow (hosted on Fly.io) that transcribes them, cleans up the grammar, tags each entry, and files a Markdown note into an Obsidian vault via a home server.",
     stack: ["Swift", "iOS", "n8n", "AI/LLM", "Python"],
     href: "https://github.com/lynardsalingujay/shellingford-pipeline",
   },
   {
-    title: "Voice Journal Assistant",
-    status: "In progress",
+    title: "Chat Journal Assistant",
+    status: "Shipped",
     description:
-      "A voice assistant built over an Obsidian daily journal using a RAG pipeline — covering embeddings, retrieval, and voice interfaces.",
-    stack: ["RAG", "AI/LLM", "Voice"],
+      'A Telegram chat assistant over my Obsidian daily journal. Ask a question like "when did I last interview with a company?" and it answers from my own entries, using a RAG pipeline: embeddings, pgvector search, and n8n workflows.',
+    stack: [
+      "RAG",
+      "Telegram",
+      "n8n",
+      "Supabase",
+      "pgvector",
+      "Python",
+      "AI/LLM",
+    ],
   },
   {
     title: "Project Task Flow",
