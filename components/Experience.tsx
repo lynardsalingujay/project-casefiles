@@ -21,6 +21,13 @@ export default function Experience() {
                 <p className="mt-1 font-mono text-sm text-dossier-muted">
                   {role.summary}
                 </p>
+                {role.bullets && (
+                  <ul className="mt-2 list-disc space-y-1 pl-5 font-mono text-sm text-dossier-muted">
+                    {role.bullets.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}

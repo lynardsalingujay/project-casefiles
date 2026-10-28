@@ -11,16 +11,11 @@ export const profile = {
   linkedin: "https://linkedin.com/in/lynardsalingujay",
 };
 
-export const about = `I'm a software engineer with over 14 years of experience across banking,
-financial services, and utilities — including roles at IBM, Standard
-Chartered Bank, OCBC Bank, Rakuten Trade, and Gentrack. At Gentrack I
-implemented platform requirements for major New Zealand utility clients
-including Genesis and Mercury.
+export const about = `
+I’m a software engineer and support analyst with more than a decade of experience across banking, financial services, utilities, and point-of-sale systems. I started at NCR modernising legacy point-of-sale systems into Java applications, then worked at IBM on the IBM Product Configurator, an internal enterprise application, and in banking at Standard Chartered and OCBC. At Rakuten Trade, a start-up online investing company, I built backend services for the trading platform. Most recently I spent four years at Gentrack, a billing systems company, implementing billing platform requirements for major New Zealand utility clients including Genesis and Mercury.
 
-I moved to New Zealand in 2019 and completed a Master of Information
-Technology at the Eastern Institute of Technology. These days I'm
-rebuilding my stack for modern web development — this site itself is
-part of that process.`;
+I moved to New Zealand in 2019 and completed a Master of Information Technology at the Eastern Institute of Technology. These days I’m rebuilding my stack for modern web development — this site itself is part of that process.
+`;
 
 export const skills = {
   stable: ["Python", "Java", "SQL", "PostgreSQL"],
@@ -122,35 +117,68 @@ export const experience = [
     org: "Gentrack Ltd",
     period: "March 2022 - April 2026",
     summary:
-      "Implemented platform requirements for major NZ utility clients (Genesis, Mercury) on Gentrack's proprietary utility platform.",
+      "Software engineer on Gentrack's proprietary billing platform, delivering requirements for major NZ utility clients such as Genesis and Mercury.",
+    bullets: [
+      "Customised Gentrack's proprietary billing platform for NZ/AU utility companies using GenBasic.",
+      "Gathered requirements directly with clients such as Genesis Energy to implement platform enhancements.",
+      "Maintained high-volume transaction processing related to customer data and billing operations.",
+      "Documented system behaviours and integration specifications for both technical and non-technical teams.",
+      "Maintained and tested RESTful APIs with Postman.",
+    ],
   },
   {
     role: "Senior Java Developer",
     org: "Rakuten Trade Sdn. Bhd.",
     period: "January 2017 - May 2019",
     summary:
-      "Backend services on an online equity trading platform, split between Java and Python (Odoo ERP configuration and scripting). Mentored junior developers and set up local dev environments with Docker, Vagrant, and Ansible.",
+      "Backend developer on Rakuten Trade, a start-up online equity trading platform in Malaysia. The work was mainly Python on an extended Odoo ERP core, with integrations into trading and settlement operations.",
+    bullets: [
+      "Developed and maintained Python code for the backend online trading system on an extended Odoo ERP platform.",
+      "Created documentation and design cases, including data flow and sequence diagrams, for all processes.",
+      "Created Ansible playbooks and Dockerfiles to set up development environments.",
+      "Mentored junior developers through code reviews and pair programming.",
+    ],
   },
   {
     role: "IT Specialist",
     org: "OCBC Bank",
     period: "May 2016 - February 2017",
     summary:
-      "Maintained a correspondence management system running daily batches of customer letters, plus production support and incident management for banking systems.",
+      "Application production support for banking systems in Kuala Lumpur, Malaysia, plus maintenance of the correspondence management system that runs daily batches of customer letters.",
+    bullets: [
+      "Provided application-level production support for banking systems, resolving escalated issues including system failures and integration problems.",
+      "Performed root cause analysis and coordinated with internal teams and vendors to restore service and prevent recurrence.",
+      "Maintained the correspondence management system and executed batch data corrections.",
+    ],
   },
   {
     role: "Support Analyst",
     org: "Standard Chartered Bank",
     period: "November 2014 - March 2016",
     summary:
-      "Oracle CRM support and incident management for banking operations, including on-call support.",
+      "Support analyst on the Oracle CRM platform in a high-volume banking environment in Kuala Lumpur, Malaysia, covering incident resolution and daily batch job monitoring.",
+    bullets: [
+      "Delivered ongoing end-to-end BAU support for the Oracle CRM platform, resolving incident tickets.",
+      "Investigated issues and recommended appropriate actions, including root cause analysis and stability monitoring.",
+      "Provided primary and secondary support on a weekly basis to monitor the daily batch jobs.",
+      "Analysed the impact of changes on the production environment.",
+    ],
   },
   {
     role: "IT Specialist",
     org: "IBM Philippines Inc.",
     period: "May 2011 - September 2014",
     summary:
-      "Front-end team on IBM Product Configurator (IPC), an internal enterprise application — built with Java, JSF, Dojo, and JavaScript. My first hands-on frontend work, well before TypeScript and Angular existed in their current form.",
+      "Java front-end developer on the IBM Product Configurator (IPC), an internal enterprise application, in Cebu City, Philippines. My first hands-on frontend work, well before TypeScript and Angular existed in their current form.",
+    bullets: [
+      "Worked as a Java front-end developer in an Agile team, building front-end components for IPC with Java Server Faces (JSF), Dojo, and JavaScript.",
+      "Collaborated with product owners, testers, and other software engineers to deliver high-quality software.",
+      "Developed a metrics logging and web services application for the Blue Harmony project of IPC.",
+      "Implemented a progress indicator as part of the UI performance enhancements.",
+      "Developed a cache clear mechanism using the Java Caching System.",
+      "Fixed bugs and supported the production environment, often investigating and resolving issues independently.",
+      "Built internal monitoring and reporting tools that gave the operations team better visibility into system performance.",
+    ],
   },
   {
     role: "Development Software Engineer",
