@@ -181,10 +181,16 @@ export const experience = [
     ],
   },
   {
-    role: "Development Software Engineer",
+    role: "Software Development Engineer",
     org: "NCR Inc.",
     period: "May 2007 - December 2010",
     summary:
-      "Java developer on a team modernising legacy point-of-sale systems into Java-based applications, covering design, development, and testing.",
+      "Software development engineer on point-of-sale software for EMEA retail customers, including Aldi, in Cebu City, Philippines.",
+    bullets: [
+      "Re-engineered the existing HTML-based system into a Java application for the Advanced Retail Solution (ARS) project, modernising legacy point-of-sale systems.",
+      "Integrated SOAP and REST web services to extend system capabilities.",
+      "Fixed bugs and improved application performance.",
+      "Supported solution development activities to improve business processes.",
+    ],
   },
 ];
